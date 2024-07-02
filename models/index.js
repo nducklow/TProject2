@@ -1,3 +1,6 @@
+const Location = require('./location')
+const Team = require('./team')
+
 Location.hasMany(Team, {
     foreignKey: 'location_id'
 });
@@ -6,3 +9,5 @@ Location.hasMany(Team, {
 Team.belongsTo(Location, {
     foreignKey: 'location_id',
 });
+
+module.exports = {Location, Team}

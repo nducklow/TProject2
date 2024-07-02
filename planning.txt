@@ -1,0 +1,53 @@
+Select a data source - Major League Baseball cities and parks
+BACKEND:
+Purpose/Functionality:
+- display all the MLB cities and ballparks on a page
+- display individual team on it's own page
+- Create form to add sports teams to a page
+
+Steps!
+
+[x] Create package.json (npm init -y)
+express
+sequelize
+express-handlebars
+*handlebars
+dotenv (hides secrets)
+pg
+nodemon (dev dependency ) npm i nodemon --save-dev
+
+[x] create .gitignore
+
+create database
+    [x] - add schema.sql (Drop/create db)
+    - seed: create seed file
+    [x] - connection to db
+
+Create model 
+    Location -
+        city
+        state
+        country
+    Team
+        name
+        venue
+        location_id
+
+server.js
+
+Create routes
+    - html routes
+        GET /
+        GET /teams/:teamName
+    - api routes
+     POST /api/teams/new-team
+
+FRONTEND:
+ - Create views folder
+    /layouts - main.handlebars
+    all-teams
+    team
+
+
+Team belongs to Location (location_id)
+Locaton has many teams
