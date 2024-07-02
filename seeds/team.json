@@ -1,0 +1,17 @@
+[
+    {
+        "name": "White Sox",
+        "venue": "Guarentee Rate",
+        "location_id": 1
+    },
+    {
+        "name": "Cubs",
+        "venue": "Wrigley Field",
+        "location_id": 1
+    },
+    {
+        "name": "Astros",
+        "venue": "Minute Maid Park",
+        "location_id": 2
+    }
+]
